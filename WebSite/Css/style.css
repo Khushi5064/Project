@@ -1,0 +1,805 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+/* Header Start */
+
+.header {
+    background-color: black;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: gray;
+    font-weight: 500;
+}
+
+.header .list_line {
+    color: gray;
+}
+
+/* Header End */
+
+/* Navbar start */
+.navbar {
+    background-color: rgb(74, 72, 72);
+    margin: 1px 0px 0px 0px;
+}
+
+.navbar .main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+
+    display: flex;
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+
+}
+
+.navbar .logo a img {
+    mix-blend-mode: color;
+    height: 70px;
+}
+
+.navbar .logo h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.green_name {
+    color: rgba(22, 197, 22, 0.764);
+}
+
+.navbar .search_buttuon {
+    margin: 25px 20px 0px 20px;
+}
+
+.navbar .search_buttuon input {
+    padding: 4px 10px;
+}
+
+.navbar .search_buttuon input:focus {
+    outline: 1px solid black;
+}
+
+.search_buttuon form {
+    display: flex;
+    height: 30px;
+}
+
+.search_buttuon i {
+    padding: 4px 10px;
+    background-color: rgb(185, 29, 185);
+    color: white;
+    cursor: pointer;
+    border-radius: 1px solid rgb(185, 29, 185);
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    padding: 0px 3px;
+}
+
+.navigation ul a li {
+    background-color: whitesmoke;
+    padding: 10px 35px;
+    border-radius: 10px 10px 0px 0px;
+
+    /* margin: 0px 10px; */
+}
+
+.navigation ul a li:hover,
+.navigation ul a li.active {
+    background-color: rgba(251, 119, 10, 0.901);
+    color: white;
+    transition: 0.4s;
+}
+
+/* Navbar End */
+
+/* main start */
+
+.main_2 {
+    background-color: rgba(251, 119, 10, 0.901);
+}
+
+.main_2 .top_banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_2 .top_banner .first_part {
+    border: 0px solid black;
+    margin: 30px 20px;
+    padding: 10px 20px;
+    text-align: justify;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(221, 43, 43);
+    box-shadow: rgba(1, 3, 0.7, 0.755) 0px 5px 15px;
+    ;
+    width: 60%;
+}
+
+.main_2 .top_banner .first_part h3 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: green;
+}
+
+.main_2 .top_banner .second_part {
+    margin: 20px 100px;
+    padding: 20px 50px;
+    text-align: justify;
+}
+
+.main_2 .top_banner .second_part h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.main_2 .top_banner .second_part p {
+    color: white;
+    font-size: 15px;
+}
+
+/* main end */
+
+.main_3 .top_banner_2 {
+    margin: 0px 70px;
+    display: flex;
+}
+
+.main_3 .top_banner_2 .wlx_site h1 {
+    margin-top: 20px;
+}
+
+.main_3 .top_banner_2 .wlx_site p {
+    margin-top: 20px;
+    margin-right: 5px;
+
+}
+
+footer {
+    background-color: black;
+    padding: 40px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* ==========================================  media query ================================================= */
+
+/* Mobile */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header ul {
+        padding: 5px 0px;
+        font-size: 12px;
+    }
+
+    .navbar .main {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .navbar .logo a img {
+        height: 40px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 15px;
+    }
+
+    .navbar .search_buttuon {
+        margin: 4px 20px 17px 20px;
+    }
+
+    .search_buttuon form {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .navbar .search_buttuon input {
+        padding: 0px 30px;
+    }
+
+    .navigation ul a li {
+        background-color: whitesmoke;
+        padding: 5px 10px;
+        font-size: 11px;
+        border-radius: 3px 3px 0px 0px;
+        /* margin: 0px 10px; */
+    }
+
+    .navigation ul a li:hover,
+    .navigation ul a li.active {
+        background-color: rgba(251, 119, 10, 0.901);
+        color: white;
+        transition: 0.4s;
+    }
+
+
+    /* main start */
+    .main_2 .top_banner {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+
+    .main_2 .top_banner .first_part {
+        margin: 25px 16px;
+        padding: 10px 20px;
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .main_2 .top_banner .first_part h3 {
+        font-size: 17px;
+    }
+
+    .main_2 .top_banner .second_part {
+        margin: 0px 0px;
+        padding: 20px 10px;
+    }
+
+    .main_2 .top_banner .second_part h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .main_2 .top_banner .second_part p {
+        font-size: 12px;
+    }
+
+    /* main end */
+
+    /* main-2 end */
+    .main_3 .top_banner_2 {
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_3 .top_banner_2 .wlx_site h1 {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .main_3 .top_banner_2 .wlx_site p {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .top_banner_2 .asidepart img {
+        width: 90%;
+        margin: 15px;
+        border-radius: 2px;
+    }
+
+
+
+
+}
+
+
+
+
+
+/* ipads */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header ul {
+        padding: 5px 0px;
+        font-size: 12px;
+    }
+
+    .navbar .main {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .navbar .logo a img {
+        height: 40px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 15px;
+    }
+
+    .navbar .search_buttuon {
+        margin: 4px 20px 17px 20px;
+    }
+
+    .search_buttuon form {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .navbar .search_buttuon input {
+        padding: 0px 30px;
+    }
+
+    .navigation ul a li {
+        background-color: whitesmoke;
+        padding: 5px 10px;
+        font-size: 11px;
+        border-radius: 3px 3px 0px 0px;
+        /* margin: 0px 10px; */
+    }
+
+    .navigation ul a li:hover,
+    .navigation ul a li.active {
+        background-color: rgba(251, 119, 10, 0.901);
+        color: white;
+        transition: 0.4s;
+    }
+
+
+    /* main start */
+    .main_2 .top_banner {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+
+    .main_2 .top_banner .first_part {
+        margin: 20px 35px;
+        padding: 20px 20px;
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .main_2 .top_banner .first_part h3 {
+        font-size: 17px;
+    }
+
+    .main_2 .top_banner .second_part {
+        margin: 0px 0px;
+        padding: 20px 10px;
+    }
+
+    .main_2 .top_banner .second_part h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .main_2 .top_banner .second_part p {
+        font-size: 12px;
+    }
+
+    /* main end */
+    /* main-2 end */
+    .main_3 .top_banner_2 {
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_3 .top_banner_2 .wlx_site h1 {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .main_3 .top_banner_2 .wlx_site p {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .top_banner_2 .asidepart img {
+        width: 85%;
+        margin: 15px 40px;
+        border-radius: 2px;
+    }
+
+
+}
+
+
+/* tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header ul {
+        padding: 10px 0px;
+        font-size: 14px;
+    }
+
+    .navbar .main {
+        display: flex;
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px 0px 15px;
+    }
+
+    .navbar .logo a img {
+        height: 40px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar .search_buttuon {
+        margin: 20px 20px 17px 20px;
+    }
+
+    .search_buttuon form {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .navbar .search_buttuon input {
+        padding: 0px 20px;
+    }
+
+    .navigation ul a li {
+        background-color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 3px 3px 0px 0px;
+        /* margin: 0px 10px; */
+    }
+
+    /* main start */
+    .main_2 .top_banner {
+        display: flex;
+        justify-content: space-between;
+        /* flex-flow: column; */
+    }
+
+    .main_2 .top_banner .first_part {
+        margin: 20px 35px;
+        padding: 20px 20px;
+        font-size: 10px;
+        width: 165%;
+    }
+
+    .main_2 .top_banner .first_part h3 {
+        font-size: 17px;
+    }
+
+    .main_2 .top_banner .second_part {
+        margin: 0px 0px;
+        padding: 20px 10px;
+    }
+
+    .main_2 .top_banner .second_part h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .main_2 .top_banner .second_part p {
+        font-size: 12px;
+    }
+
+    /* main end */
+    .main_3 .top_banner_2 {
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main_3 .top_banner_2 .wlx_site h1 {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .main_3 .top_banner_2 .wlx_site p {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .top_banner_2 .asidepart img {
+        width: 85%;
+        margin: 15px 40px;
+        border-radius: 2px;
+    }
+
+
+
+}
+
+/* desktops */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .header ul {
+        padding: 10px 0px;
+        font-size: 14px;
+    }
+
+    .navbar .main {
+        display: flex;
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px 0px 15px;
+    }
+
+    .navbar .logo a img {
+        height: 40px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar .search_buttuon {
+        margin: 20px 20px 17px 20px;
+    }
+
+    .search_buttuon form {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .navbar .search_buttuon input {
+        padding: 0px 20px;
+    }
+
+    .navigation ul a li {
+        background-color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 3px 3px 0px 0px;
+        /* margin: 0px 10px; */
+    }
+
+    /* main start */
+    .main_2 .top_banner {
+        display: flex;
+        justify-content: space-between;
+        /* flex-flow: column; */
+    }
+
+    .main_2 .top_banner .first_part {
+        margin: 25px 16px;
+        padding: 10px 20px;
+        font-size: 10px;
+        width: 97%;
+    }
+
+    .main_2 .top_banner .first_part h3 {
+        font-size: 17px;
+    }
+
+    .main_2 .top_banner .second_part {
+        margin: 0px 0px;
+        padding: 20px 10px;
+    }
+
+    .main_2 .top_banner .second_part h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .main_2 .top_banner .second_part p {
+        font-size: 12px;
+    }
+
+    /* main end */
+
+
+
+
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .header {
+        background-color: black;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        list-style: none;
+    }
+
+    .header ul li a {
+        text-decoration: none;
+        padding: 0px 10px;
+        color: gray;
+        font-weight: 500;
+    }
+
+    .header .list_line {
+        color: gray;
+    }
+
+    /* Header End */
+
+    /* Navbar start */
+    .navbar {
+        background-color: rgb(74, 72, 72);
+        margin: 1px 0px 0px 0px;
+    }
+
+    .navbar .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+
+        display: flex;
+        margin: 0px 0px 0px 40px;
+        align-items: center;
+
+    }
+
+    .navbar .logo a img {
+        mix-blend-mode: color;
+        height: 70px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .green_name {
+        color: rgba(22, 197, 22, 0.764);
+    }
+
+    .navbar .search_buttuon {
+        margin: 25px 20px 0px 20px;
+    }
+
+    .navbar .search_buttuon input {
+        padding: 4px 10px;
+    }
+
+    .navbar .search_buttuon input:focus {
+        outline: 1px solid black;
+    }
+
+    .search_buttuon form {
+        display: flex;
+        height: 30px;
+    }
+
+    .search_buttuon i {
+        padding: 4px 10px;
+        background-color: rgb(185, 29, 185);
+        color: white;
+        cursor: pointer;
+        border-radius: 1px solid rgb(185, 29, 185);
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+        padding: 0px 3px;
+    }
+
+    .navigation ul a li {
+        background-color: whitesmoke;
+        padding: 10px 35px;
+        border-radius: 10px 10px 0px 0px;
+
+        /* margin: 0px 10px; */
+    }
+
+    .navigation ul a li:hover,
+    .navigation ul a li.active {
+        background-color: rgba(251, 119, 10, 0.901);
+        color: white;
+        transition: 0.4s;
+    }
+
+    /* Navbar End */
+
+    /* main start */
+
+    .main_2 {
+        background-color: rgba(251, 119, 10, 0.901);
+    }
+
+    .main_2 .top_banner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_2 .top_banner .first_part {
+        border: 0px solid black;
+        margin: 30px 20px;
+        padding: 10px 20px;
+        text-align: justify;
+        font-size: 12px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(221, 43, 43);
+        box-shadow: rgba(1, 3, 0.7, 0.755) 0px 5px 15px;
+        width: 100%;
+    }
+
+    .main_2 .top_banner .first_part h3 {
+        padding-bottom: 5px;
+        font-size: 20px;
+        color: green;
+    }
+
+    .main_2 .top_banner .second_part {
+        margin: 20px 100px;
+        padding: 20px 50px;
+        text-align: justify;
+    }
+
+    .main_2 .top_banner .second_part h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .main_2 .top_banner .second_part p {
+        color: white;
+        font-size: 15px;
+    }
+
+    /* main end */
+
+
+}
